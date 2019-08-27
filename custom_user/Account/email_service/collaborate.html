@@ -1,0 +1,5 @@
+{% autoescape off %}
+Hi {{ user.username }},
+Share the note with you with title <b> {{ title }} </b>
+http://{{ domain }}{% url 'Fundooapp:get_collaborated_note' note_id=note_id %}
+{% endautoescape %}
